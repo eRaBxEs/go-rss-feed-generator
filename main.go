@@ -2,6 +2,8 @@ package main
 
 import (
 	"encoding/xml"
+	"fmt"
+	"os"
 	"time"
 )
 
@@ -72,5 +74,28 @@ func generateRSSFeed() ([]byte, error) {
 }
 
 func main() {
+	// generate the rss feeds
+	rssFeed, err := generateRSSFeed()
+	if err != nil {
+		fmt.Println("Error generating rss feeds:", err)
+		return
+	}
+
+	// Write feed to a file
+	file, err := os.Create("feed.xml")
+	if err != nil {
+		fmt.Println("Error creating file:", err)
+		return
+	}
+
+	defer file.Close()
+
+	_, err = file.Write(rssFeed)
+	if err != nil {
+		fmt.Println("Error writing to file:", err)
+		return
+	}
+
+	fmt.Println("RSS feed generated and saved to feed.xml")
 
 }

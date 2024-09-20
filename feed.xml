@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Channel>
+   <title>Sample RSS Feed</title>
+   <link>https://example.com</link>
+   <description>This is a sample RSS feed generated using Golang.</description>
+   <pubDate>2024-09-20T03:59:01.012668018+01:00</pubDate>
+   <item>
+      <title>Article 1</title>
+      <link>https://example.com/article1</link>
+      <description>This is the description of Article 1.</description>
+      <pubDate>2024-09-20T03:59:01.012664462+01:00</pubDate>
+   </item>
+   <item>
+      <title>Article 2</title>
+      <link>https://example.com/article2</link>
+      <description>This is the description of Article 2.</description>
+      <pubDate>2024-09-20T02:59:01.012664529+01:00</pubDate>
+   </item>
+   <item>
+      <title>Artricle 2</title>
+      <link>https://example.com/article3</link>
+      <description>This is the description for Article 3.</description>
+      <pubDate>2024-09-20T01:59:01.012664777+01:00</pubDate>
+   </item>
+   <item>
+      <title>Artricle 4</title>
+      <link>https://example.com/article4</link>
+      <description>This is the description for Article 4.</description>
+      <pubDate>2024-09-20T00:59:01.012664857+01:00</pubDate>
+   </item>
+</Channel>
